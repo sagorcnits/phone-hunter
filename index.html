@@ -30,7 +30,7 @@
     </style>
   </head>
   <body>
-    <header class="bg-[#0D6EFD0D] md:h-[500px]">
+    <header class="bg-[#0D6EFD0D] h-[400px] md:h-[500px]">
       <nav class="max-w-6xl mx-auto py-8">
         <div class="navbar">
           <div class="flex-1">
@@ -52,19 +52,65 @@
           have suffered alteration in some form, by injected humou.
         </p>
         <button class="btn">BUY NOW</button>
-
-        <img
-          class="w-1/2 mx-auto"
-          src="images/banner.png"
-          alt="banner-images"
-        />
       </section>
     </header>
-
+    <img
+      class="-mt-[70px] md:-mt-[200px] md:w-1/2 mx-auto"
+      src="images/banner.png"
+      alt="banner-images"
+    />
     <main>
       <!-- Search your phone -->
+      <section class="max-w-6xl mx-auto px-2 md:px-0">
+        <h1 class="text-center text-2xl font-bold">Search your phone</h1>
+        <div
+          class="bg-[#100F0F0D] md:w-1/2 mx-auto flex justify-between items-center rounded-md my-4"
+        >
+          <input
+            id="input"
+            class="bg-transparent focus:bg-transparent focus:outline-none py-2 px-4"
+            type="text"
+            placeholder="Search your phone"
+          />
+          <button onclick="searchData()" class="btn">Search</button>
+        </div>
+        <!-- loader  -->
+        <div class="text-center text-6xl text-green-600 hidden" id="loader">
+          <span class="loading loading-ring loading-lg"></span>
+        </div>
+
+        <!-- card container all  -->
+        <div
+          class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="card-container"
+        ></div>
+      </section>
     </main>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content mt-8">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
     <!-- javaScript link -->
+    <script src="scripts/utility.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>
